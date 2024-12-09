@@ -31,13 +31,13 @@ Canine carpal joint disorders are significant in veterinary orthopedics, requiri
 1. **Run the App Locally**:
    Clone this repository and install the required dependencies:
    ```bash
-   git clone https://github.com/<your-repo-name>.git
-   cd <your-repo-name>
+   git clone https://github.com/DawidTobolski/Canine-Carpal-Joint-Structure-Estimator.git
+   cd Canine-Carpal-Joint-Structure-Estimator
    pip install -r requirements.txt
    streamlit run streamlit_app_updated.py
    ```
 2. **Deployed App**:
-   Access the hosted app on Streamlit Cloud: [Canine Carpal Joint Estimator](https://share.streamlit.io/<username>/<repo-name>)
+   Access the hosted app on Streamlit Cloud: [Canine Carpal Joint Estimator](https://share.streamlit.io/DawidTobolski/Canine-Carpal-Joint-Structure-Estimator/main/streamlit_app_updated.py)
 
 ## **Technical Overview**
 - **Models**: Linear regression equations derived from MRI imaging.
