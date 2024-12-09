@@ -51,7 +51,7 @@ st.title("Canine Carpal Joint Structure Estimator")
 st.header("Input Measurements")
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    BW = st.number_input("BW (kg)", value=0.0)
+    BW = st.number_input("BW (mm)", value=0.0)
 with col2:
     CJC = st.number_input("CJC (mm)", value=0.0)
 with col3:
@@ -71,7 +71,7 @@ st.markdown("""
 results_df = pd.DataFrame(
     {
         "Structure": coefficients["Structure"],
-        "Estimated Size (kg) based on BW": [0] * len(coefficients),
+        "Estimated Size (mm) based on BW": [0] * len(coefficients),
         "Estimated Size (mm) based on CJC": [0] * len(coefficients),
         "Estimated Size (mm) based on LDO": [0] * len(coefficients),
         "Estimated Size (mm) based on LDCJ": [0] * len(coefficients),
