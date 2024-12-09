@@ -51,7 +51,7 @@ st.title("Canine Carpal Joint Structure Estimator")
 st.header("Input Measurements")
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
-    BW = st.number_input("BW (mm)", value=0.0)
+    BW = st.number_input("BW (kg)", value=0.0)
 with col2:
     CJC = st.number_input("CJC (mm)", value=0.0)
 with col3:
@@ -84,7 +84,7 @@ results_df = pd.DataFrame(
 
 # Update only the relevant column based on input changes
 if BW != 0.0:
-    results_df["Estimated Size (kg) based on BW"] = coefficients["BW_int"] + coefficients["BW_coef"] * BW
+    results_df["Estimated Size (mm) based on BW"] = coefficients["BW_int"] + coefficients["BW_coef"] * BW
 
 if CJC != 0.0:
     results_df["Estimated Size (mm) based on CJC"] = coefficients["CJC_int"] + coefficients["CJC_coef"] * CJC
